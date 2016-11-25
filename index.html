@@ -3,50 +3,35 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640">
-
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>Remotecontrolrobotir by driewe</title>
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Remote Control IR Robot by driewe</title>
   </head>
 
   <body>
-    <a id="forkme_banner" href="https://github.com/driewe/RemoteControlRobotIR">View on GitHub</a>
-    <div class="shell">
+    <div id="container">
+      <div class="inner">
 
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Remotecontrolrobotir</h1>
-            <h2>Project using repurposed IR controller to control a parallax robot</h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
+        <header>
+          <h1>Remote Control IR Robot</h1>
+          <h2>Project using repurposed IR controller to control a parallax robot</h2>
+        </header>
 
-      <section id="downloads">
-        <span class="inner">
-          <a href="https://github.com/driewe/RemoteControlRobotIR/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/driewe/RemoteControlRobotIR/tarball/master" class="tgz"><em>download</em> .TGZ</a>
-        </span>
-      </section>
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/driewe/RemoteControlRobotIR/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/driewe/RemoteControlRobotIR/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/driewe/RemoteControlRobotIR" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
 
+        <hr>
 
-      <span class="banner-fix"></span>
-
-
-      <section id="main_content">
-        <h1>
+        <section id="main_content">
+          <h1>
 <a id="infra-red-controlled-robot" class="anchor" href="#infra-red-controlled-robot" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Infra Red Controlled Robot</h1>
 
 <p>This is the first experiment I tried with the board of education arduuino robot shield.  The experiment involves using <a href="https://github.com/z3t0/Arduino-IRremote">Ken Shirrifs IR Library</a> along with any IR Receiver.  In order to use this example you will first need to determine what the IR codes are for the transmitter you wish to use.  The examples/IRrecvDemo sketch in the library provides a simple example of how to receive codes.  See <a href="http://www.righto.com/2009/08/multi-protocol-infrared-remote-library.html">Kens Blog</a> for more info.</p>
@@ -60,22 +45,15 @@
 <p>Oh and if you are wondering why no beeping from the Robot it is because the tone function is unable to access TIMER2 because it is being used by the IR Library   The servo library uses TIMER1.</p>
 
 <p><a href="https://github.com/driewe/RemoteControlRobotIR/blob/master/sourcecode/RemoteRobotWithFunctions.ino">Source Code</a></p>
-      </section>
+        </section>
 
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>this project by <a href="https://github.com/driewe">driewe</a> can be found on <a href="https://github.com/driewe/RemoteControlRobotIR">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
-      </footer>
+        <footer>
+          Remote Control IR Robot is maintained by <a href="https://github.com/driewe">driewe</a><br>
+          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
 
+        
+      </div>
     </div>
-
-    
   </body>
 </html>
